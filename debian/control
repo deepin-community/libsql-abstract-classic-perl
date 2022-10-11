@@ -1,0 +1,39 @@
+Source: libsql-abstract-classic-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libmro-compat-perl <!nocheck>,
+                     libscalar-list-utils-perl <!nocheck>,
+                     libsql-abstract-perl <!nocheck>,
+                     libtest-deep-perl <!nocheck>,
+                     libtest-exception-perl <!nocheck>,
+                     libtest-simple-perl <!nocheck>,
+                     libtest-warn-perl <!nocheck>,
+                     perl
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libsql-abstract-classic-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libsql-abstract-classic-perl.git
+Homepage: https://metacpan.org/release/SQL-Abstract-Classic
+Rules-Requires-Root: no
+
+Package: libsql-abstract-classic-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libmro-compat-perl,
+         libscalar-list-utils-perl,
+         libsql-abstract-perl
+Description: module to generate SQL from Perl data structures - classic version
+ SQL::Abstract::Classic is a low-impact fork of SQL::Abstract v1.81 and nearly
+ identical to it. This module exists to preserve the ability of users to opt
+ into the new way of doing things in the quickly evolving SQL::Abstract
+ according to their own schedules.
+ .
+ SQL::Abstract and SQL::Abstract::Classic are Perl modules that allow
+ developers to generate SQL from Perl data strutures, inspired by
+ DBIx::Abstract. The intent of these modules is to provide abstract SQL
+ generation methods, allowing one to generate SQL while retaining complete
+ control over the statement handles.

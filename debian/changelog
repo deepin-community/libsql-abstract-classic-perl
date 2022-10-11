@@ -1,0 +1,11 @@
+libsql-abstract-classic-perl (1.91-2) unstable; urgency=medium
+
+  * No-change source-only re-upload.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 29 Sep 2021 15:40:03 +0200
+
+libsql-abstract-classic-perl (1.91-1) unstable; urgency=low
+
+  * Initial release (closes: #995182).
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 27 Sep 2021 17:29:51 +0200
